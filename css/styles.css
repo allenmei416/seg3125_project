@@ -26,6 +26,7 @@ body {
     text-align: center; /* Center text horizontally */
     padding: 1rem 0; /* Add padding to center vertically */
     transition: font-weight 0.2s; /* Smooth transition for font-weight */
+    user-select: none; 
 }
 
 .nav-link:hover {
@@ -40,6 +41,7 @@ body {
 h1 {
     color: #007bff;
     font-family: 'Forum', serif; /* Apply Forum font to headers */
+    user-select: none; 
 }
 
 .social-icons {
@@ -70,10 +72,8 @@ h1 {
     font-weight: bold;
     text-align: center;
     text-shadow: 0 0 10px black, 0 0 10px black, 0 0 10px black, 0 0 10px black; /* Add strong black outline */
+    user-select: none; /* Prevent text selection */
 }
-
-
-
 
 @media (min-width: 768px) {
     .home-picture {
