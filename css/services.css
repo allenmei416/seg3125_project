@@ -1,0 +1,56 @@
+body {
+    background-color: #f8f9fa;
+    font-family: 'Forum', serif; /* Apply Forum font to body */
+}
+
+.service-image {
+    width: 100%;
+    height: auto;
+}
+
+/* Adjust layout for smaller screens */
+@media (max-width: 768px) {
+    .col-md-6 {
+        flex-basis: 100%;
+        max-width: 100%;
+    }
+}
+
+.col-md-9,
+.col-lg-10 {
+    margin-left: 250px; /* Adjust margin-left based on the width of the sidebar */
+}
+
+.service-image {
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px; /* Add vertical spacing */
+}
+
+/* Add space between title and chart */
+h2 {
+    margin-bottom: 20px;
+    margin-top: 20px; /* Add vertical padding only above the title */
+}
+
+/* Add padding to left of text */
+.row > .col-md-6 {
+    padding-left: 20px;
+}
+
+/* Add padding to each row */
+.service-section .row {
+    padding-bottom: 20px;
+    border-bottom: 1px solid #ccc; /* Add line between each row */
+    padding-top: 20px; /* Add padding at the top of each row */
+}
+
+/* Add description below each picture */
+.service-description {
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.padding-top{
+    padding-top: 40px;
+}
