@@ -1,0 +1,84 @@
+body {
+    background-color: #f8f9fa;
+    font-family: 'Forum', serif; /* Apply Forum font to body */
+    overflow: hidden;
+}
+
+.home-picture {
+    position: relative;
+}
+
+.home-picture img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.home-picture::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent black overlay */
+    z-index: 1;
+}
+
+.home-text-container {
+    position: absolute;
+    top: 20%; /* Adjust the top position */
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2; /* Ensure the text is above the overlay */
+    text-align: center;
+    user-select: none; /* Prevent text selection */
+}
+
+.home-title {
+    color: white;
+    font-size: 8vw; /* Make font size relative to viewport width */
+    font-weight: bold;
+    text-shadow: 0 0 10px black; /* Add strong black outline */
+}
+
+.home-subtitle {
+    color: white;
+    font-size: 5vw; /* Make font size relative to viewport width */
+    font-weight: bold;
+    text-shadow: 0 0 10px black; /* Add strong black outline */
+    margin-top: -20px; /* Decrease the distance between title and subtitle */
+}
+
+.info-box {
+    width: 800px;
+    background: rgba(0, 0, 0, 0.2); /* Fully transparent background */
+    border: 2px solid white; /* White border */
+    border-radius: 15px; /* Curved edges */
+    padding: 20px;
+    margin-top: 20px; /* Space between subtitle and info box */
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    font-size: 1.5vw;
+    color: white; /* White text color */
+}
+
+.info-box i {
+    color: white; /* White icons */
+}
+
+.info-box div {
+    flex: 1;
+    margin: 0 10px;
+}
+
+.info-box div:not(:last-child) {
+    border-right: 2px solid rgba(255, 255, 255, 0.3); /* Light white separator line */
+}
+
+@media (min-width: 768px) {
+    .home-picture {
+        width: 100%;
+    }
+}

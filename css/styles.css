@@ -1,11 +1,5 @@
 /* styles.css */
 
-body {
-    background-color: #f8f9fa;
-    font-family: 'Forum', serif; /* Apply Forum font to body */
-    overflow: hidden;
-}
-
 #sidebar {
     height: 100vh;
     position: fixed;
@@ -29,9 +23,18 @@ body {
     user-select: none; 
 }
 
+.nav-link.active {
+    font-weight: 800;
+    font-size: 1.5rem;
+}
+
 .nav-link:hover {
     color: #007bff;
     font-weight: bold; /* Bold font on hover */
+}
+
+.underlined {
+    text-decoration: underline;
 }
 
 .main-content {
@@ -72,8 +75,10 @@ h1 {
     font-weight: bold;
     text-align: center;
     text-shadow: 0 0 10px black, 0 0 10px black, 0 0 10px black, 0 0 10px black; /* Add strong black outline */
-    user-select: none; /* Prevent text selection */
 }
+
+
+
 
 @media (min-width: 768px) {
     .home-picture {
