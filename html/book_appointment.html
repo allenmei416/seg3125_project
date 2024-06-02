@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Appointment - Stylish Cuts</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Forum&display=swap">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/book_appointment.css">
+</head>
+<body>
+
+    <div class="container-fluid">
+        <div class="row">
+            <!-- Vertical Navigation Bar -->
+            <nav id="sidebar" class="col-md-3 col-lg-2 d-md-block bg-black sidebar">
+                <div class="d-flex flex-column align-items-center position-sticky vh-100">
+                    <h1 class="text-white mt-3 mb-3">Stylish Cuts</h1>
+                    <ul class="nav flex-column text-center w-100">
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="services.html">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="service_experts.html">Service Experts</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white active" href="book_appointment.html">Book Now</a>
+                        </li>
+                    </ul>
+                    <!-- Contact Information -->
+                    <div class="sidebar-footer text-white text-center mt-auto pb-3">
+                        <!-- Social Media Icons -->
+                        <div class="social-icons mt-3">
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+
+            <!-- Main Content Area -->
+            <div class="col-md-9 col-lg-10 ml-md-auto main-content">
+                <div class="container mt-5">
+                    <h2 id = "appointment_header" class="mb-4">Book an Appointment</h2>
+                    <form id="appointmentForm">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <!-- Type of Service -->
+                                <div class="form-group">
+                                    <label for="serviceType">Type of Service</label>
+                                    <select class="form-control" id="serviceType">
+                                        <option>Select Service</option>
+                                        <option>Haircut</option>
+                                        <option>Shave</option>
+                                        <option>Hair Color</option>
+                                        <option>Facial</option>
+                                    </select>
+                                </div>
+                                <!-- Service Expert -->
+                                <div class="form-group">
+                                    <label for="serviceExpert">Service Expert</label>
+                                    <select class="form-control" id="serviceExpert">
+                                        <option>Select Expert</option>
+                                        <option>John Doe</option>
+                                        <option>Jane Smith</option>
+                                        <option>Mike Johnson</option>
+                                        <option>Emily Davis</option>
+                                    </select>
+                                </div>
+                                <!-- Select Time -->
+                                <div class="form-group">
+                                    <label for="appointmentTime">Select Time</label>
+                                    <input type="time" class="form-control" id="appointmentTime">
+                                </div>
+                                <!-- Select Date -->
+                                <div class="form-group">
+                                    <label for="appointmentDate">Select Date</label>
+                                    <input type="date" class="form-control" id="appointmentDate">
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <!-- Full Name -->
+                                <div class="form-group">
+                                    <label for="fullName">Full Name</label>
+                                    <input type="text" class="form-control" id="fullName" placeholder="Enter your full name">
+                                </div>
+                                <!-- Email -->
+                                <div class="form-group">
+                                    <label for="email">Email</label>
+                                    <input type="email" class="form-control" id="email" placeholder="Enter your email">
+                                </div>
+
+                                <!-- Comments -->
+                                <div class="form-group">
+                                    <label for="comments">Comments</label>
+                                    <input class="form-control" id="comments" rows="4" placeholder="Enter your comments"></input>
+                                </div>
+                                <!-- Book Appointment Button -->
+                                <button type="submit" class="btn btn-primary book-appointment-btn">Book Appointment</button>
+                            </div>
+                        </div>
+                    </form>
+                    <!-- Confirmation Message Section -->
+                    <div id="confirmationMessage" style="display: none;">
+                        <h2 class="mb-4">Appointment Confirmed</h2>
+                        <p>Service: <span id="serviceMessage"></span></p>
+                        <p>Service Expert: <span id="serviceExpertMessage"></span></p>
+                        <p>Time: <span id="appointmentTimeMessage"></span></p>
+                        <p>Day: <span id="appointmentDateMessage"></span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="../js/scripts.js"></script>
+</body>
+</html>

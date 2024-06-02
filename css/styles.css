@@ -65,21 +65,6 @@ h1 {
     height: auto;
 }
 
-.home-title {
-    position: absolute;
-    top: 20%; /* Adjust the top position */
-    left: 50%;
-    transform: translateX(-50%);
-    color: white;
-    font-size: 10rem; /* Increase font size */
-    font-weight: bold;
-    text-align: center;
-    text-shadow: 0 0 10px black, 0 0 10px black, 0 0 10px black, 0 0 10px black; /* Add strong black outline */
-}
-
-
-
-
 @media (min-width: 768px) {
     .home-picture {
         width: 100%;

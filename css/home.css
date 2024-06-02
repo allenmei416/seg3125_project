@@ -5,15 +5,23 @@ body {
 }
 
 .home-picture {
-    position: relative;
+    width: 100vw; /* 100% of the viewport width */
+    height: 100vh; /* 100% of the viewport height */
+    overflow: hidden; /* Hide any overflow to ensure the image covers the entire container */
+    margin: 0; /* Remove any default margin */
+    padding: 0; /* Remove any default padding */
+    display: flex; /* Flexbox to help align items */
+    align-items: center; /* Center items vertically */
+    justify-content: center; /* Center items horizontally */
 }
 
 .home-picture img {
-    width: 100%;
-    height: auto;
-    display: block;
+    height: 100%; /* Ensure image height is 100% of the container */
+    width: auto; /* Maintain aspect ratio by adjusting width */
+    display: block; /* Display as a block-level element */
+    margin: 0; /* Remove any default margin */
+    padding: 0; /* Remove any default padding */
 }
-
 .home-picture::before {
     content: '';
     position: absolute;
@@ -51,7 +59,8 @@ body {
 }
 
 .info-box {
-    width: 800px;
+    width: 80vw; /* 80% of the viewport width */
+    max-width: 900px; /* Ensure it doesn't exceed 900px for large screens */
     background: rgba(0, 0, 0, 0.2); /* Fully transparent background */
     border: 2px solid white; /* White border */
     border-radius: 15px; /* Curved edges */
