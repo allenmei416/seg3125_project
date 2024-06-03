@@ -70,3 +70,8 @@ h1 {
         width: 100%;
     }
 }
+
+body {
+    background-color: #f2e6d9;
+    font-family: 'Forum', serif; /* Apply Forum font to body */
+}
