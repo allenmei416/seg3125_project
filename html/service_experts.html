@@ -8,89 +8,158 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Forum&display=swap">
     <link rel="stylesheet" href="../css/styles.css">
-    <link rel="stylesheet" href="../css/services.css">
-
+    <link rel="stylesheet" href="../css/service_expert.css">
 </head>
 <body>
 
-    <div class="container-fluid">
-        <div class="row">
-            <!-- Vertical Navigation Bar -->
-            <nav id="sidebar" class="col-md-3 col-lg-2 d-md-block bg-black sidebar">
-                <div class="d-flex flex-column align-items-center position-sticky vh-100">
-                    <h1 class="text-white mt-3 mb-3">Stylish Cuts</h1>
-                    <ul class="nav flex-column text-center w-100">
-                        <li class="nav-item">
-                            <a class="nav-link text-white" href="index.html">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-white" href="services.html">Services</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-white active" href="#">Service Experts</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-white" href="book_appointment.html">Book Now</a>
-                        </li>
-                    </ul>
-                    <!-- Contact Information -->
-                    <div class="sidebar-footer text-white text-center mt-auto pb-3">
-                       
-                        <!-- Social Media Icons -->
-                        <div class="social-icons mt-3">
-                            <a href="#"><i class="fab fa-facebook-f"></i></a>
-                            <a href="#"><i class="fab fa-twitter"></i></a>
-                            <a href="#"><i class="fab fa-instagram"></i></a>
-                        </div>
+<div class="container-fluid">
+    <div class="row">
+        <!-- Vertical Navigation Bar -->
+        <nav id="sidebar" class="col-md-3 col-lg-2 d-md-block bg-black sidebar">
+            <div class="d-flex flex-column align-items-center position-sticky vh-100">
+                <h1 class="text-white mt-3 mb-3">Stylish Cuts</h1>
+                <ul class="nav flex-column text-center w-100">
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="services.html">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white active" href="#">Service Experts</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="book_appointment.html">Book Now</a>
+                    </li>
+                </ul>
+                <!-- Contact Information -->
+                <div class="sidebar-footer text-white text-center mt-auto pb-3">
+                    <!-- Social Media Icons -->
+                    <div class="social-icons mt-3">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
                     </div>
                 </div>
-            </nav>
+            </div>
+        </nav>
 
-            <!-- Service Prices and Descriptions -->
-            <div class="col-md-9 col-lg-10">
-                <div class="container service-section"> <!-- Add class "service-section" here -->
-                    <h2 class="padding-top">Service Experts</h2>
-                    <!-- First row -->
-                    <div class="row">
-                        <div class="col-md-6">
-                            <img class="service-image" src="../img/expert1.jpg" alt="Service 1">
-                            <p class="service-description">Description: This is service 1 description.</p>
-                        </div>
-                        <div class="col-md-6">
-                            <h3>Service Expert 1</h3>
-                            <p>Cut 1 ........................................... $$$</p>
-                            <p>Description: Lorem ipsum dolor sit amet</p>
-                        </div>
+        <!-- Service Prices and Descriptions -->
+        <div class="col-md-9 col-lg-10">
+            <div class="container service-section">
+                <h2 class="padding-top">Service Experts</h2>
+                <!-- First row -->
+                <div class="row">
+                    <div class="col-md-6">
+                        <img class="service-image" src="../img/expert1.jpg" alt="Service 1">
                     </div>
-                    <!-- Second row -->
-                    <div class="row">
-                        <div class="col-md-6">
-                            <h3>Service Expert 2</h3>
-                            <p>Cut 2 ........................................... $$$</p>
-                            <p>Description: Lorem ipsum dolor sit amet</p>
-                        </div>
-                        <div class="col-md-6">
-                            <img class="service-image" src="../img/expert2.jpg" alt="Service 2">
-                            <p class="service-description">Description: This is service 2 description.</p>
-                        </div>
+                    <div class="col-md-6">
+                        <h3>John McDonald</h3>
+                        <p><strong>Senior Stylist</strong></p>
+                        <p>With over 10 years of experience in the industry, John specializes in a wide range of haircuts and styling techniques. He has a keen eye for detail and is dedicated to providing personalized services to each client, ensuring they leave the salon looking and feeling their best.</p>
+                        <!-- Button to trigger John McDonald modal -->
+                        <button type="button" class="btn btn-primary btn-black" data-toggle="modal" data-target="#johnModal">More Info</button>
                     </div>
-                    <!-- Third row -->
-                    <div class="row">
-                        <div class="col-md-6">
-                            <img class="service-image" src="../img/expert3.jpg" alt="Service 3">
-                            <p class="service-description">Description: This is service 3 description.</p>
-                        </div>
-                        <div class="col-md-6">
-                            <h3>Service Expert 3</h3>
-                            <p>Cut 3 ........................................... $$$</p>
-                            <p>Description: Lorem ipsum dolor sit amet</p>
-                        </div>
+                </div>
+                <!-- Second row -->
+                <div class="row">
+                    <div class="col-md-6">
+                        <h3>Courtney Adams</h3>
+                        <p><strong>Master Esthetician</strong></p>
+                        <p>Courtney is a highly skilled esthetician with a focus on skincare and beauty treatments. With a holistic approach to skincare, she provides customized facials, waxing services, and skincare consultations to help clients achieve radiant and healthy-looking skin.</p>
+                        <!-- Button to trigger Courtney Adams modal -->
+                        <button type="button" class="btn btn-primary btn-black" data-toggle="modal" data-target="#courtneyModal">More Info</button>
+                    </div>
+                    <div class="col-md-6">
+                        <img class="service-image" src="../img/expert2.jpg" alt="Service 2">
+                    </div>
+                </div>
+                <!-- Third row -->
+                <div class="row">
+                    <div class="col-md-6">
+                        <img class="service-image" src="../img/expert3.jpg" alt="Service 3">
+                    </div>
+                    <div class="col-md-6">
+                        <h3>Jimmy Johnson</h3>
+                        <p><strong>Color Specialist</strong></p>
+                        <p>As a passionate colorist, Jimmy brings creativity and expertise to every hair coloring session. With extensive training and a flair for color theory, he can create custom color blends and transformations tailored to each client's unique style and personality.</p>
+                        <!-- Button to trigger Jimmy Johnson modal -->
+                        <button type="button" class="btn btn-primary btn-black" data-toggle="modal" data-target="#jimmyModal">More Info</button>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+</div>
 
+<!-- Modals -->
+<!-- John McDonald Modal -->
+<div class="modal fade" id="johnModal" tabindex="-1" role="dialog" aria-labelledby="johnModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="johnModalLabel">John McDonald</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <h3>Senior Stylist</h3>
+                <p>With over 10 years of experience in the industry, John specializes in a wide range of haircuts and styling techniques. He has a keen eye for detail and is dedicated to providing personalized services to each client, ensuring they leave the salon looking and feeling their best.</p>
+                <p>John has undergone extensive training in advanced haircutting and styling techniques, including courses from renowned academies such as Vidal Sassoon and Toni&Guy. His passion for staying updated with the latest trends and techniques reflects in the quality of his work.</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Courtney Adams Modal -->
+<div class="modal fade" id="courtneyModal" tabindex="-1" role="dialog" aria-labelledby="courtneyModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="courtneyModalLabel">Courtney Adams</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <h3>Master Esthetician</h3>
+                <p>Courtney is a highly skilled esthetician with a focus on skincare and beauty treatments. With a holistic approach to skincare, she provides customized facials, waxing services, and skincare consultations to help clients achieve radiant and healthy-looking skin.</p>
+                <p>She holds certifications from leading skincare institutes and has undergone specialized training in advanced skincare treatments and techniques. Courtney's dedication to ongoing education and passion for skincare ensure that her clients receive the highest level of care and expertise.</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Jimmy Johnson Modal -->
+<div class="modal fade" id="jimmyModal" tabindex="-1" role="dialog" aria-labelledby="jimmyModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="jimmyModalLabel">Jimmy Johnson</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <h3>Color Specialist</h3>
+                <p>As a passionate colorist, Jimmy brings creativity and expertise to every hair coloring session. With extensive training and a flair for color theory, he can create custom color blends and transformations tailored to each client's unique style and personality.</p>
+                <p>Jimmy has received specialized training in advanced color techniques from industry-leading academies such as Wella Professionals and L'Oréal. His in-depth understanding of color theory and meticulous attention to detail ensure that each client receives a customized color service that exceeds their expectations.</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Include Bootstrap's JavaScript files -->
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>

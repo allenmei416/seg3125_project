@@ -1,21 +1,22 @@
 .home-picture {
-    width: 100vw; /* 100% of the viewport width */
-    height: 100vh; /* 100% of the viewport height */
-    overflow: hidden; /* Hide any overflow to ensure the image covers the entire container */
-    margin: 0; /* Remove any default margin */
-    padding: 0; /* Remove any default padding */
-    display: flex; /* Flexbox to help align items */
-    align-items: center; /* Center items vertically */
-    justify-content: center; /* Center items horizontally */
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .home-picture img {
-    height: 100%; /* Ensure image height is 100% of the container */
-    width: auto; /* Maintain aspect ratio by adjusting width */
-    display: block; /* Display as a block-level element */
-    margin: 0; /* Remove any default margin */
-    padding: 0; /* Remove any default padding */
+    height: 100%;
+    width: auto;
+    display: block;
+    margin: 0;
+    padding: 0;
 }
+
 .home-picture::before {
     content: '';
     position: absolute;
@@ -23,52 +24,52 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.5); /* Semi-transparent black overlay */
+    background: rgba(0, 0, 0, 0.5);
     z-index: 1;
 }
 
 .home-text-container {
     position: absolute;
-    top: 20%; /* Adjust the top position */
+    top: 20%;
     left: 50%;
     transform: translateX(-50%);
-    z-index: 2; /* Ensure the text is above the overlay */
+    z-index: 2;
     text-align: center;
-    user-select: none; /* Prevent text selection */
+    user-select: none;
 }
 
 .home-title {
     color: white;
-    font-size: 8vw; /* Make font size relative to viewport width */
+    font-size: 8vw;
     font-weight: bold;
-    text-shadow: 0 0 10px black; /* Add strong black outline */
+    text-shadow: 0 0 10px black;
 }
 
 .home-subtitle {
     color: white;
-    font-size: 5vw; /* Make font size relative to viewport width */
+    font-size: 5vw;
     font-weight: bold;
-    text-shadow: 0 0 10px black; /* Add strong black outline */
-    margin-top: -20px; /* Decrease the distance between title and subtitle */
+    text-shadow: 0 0 10px black;
+    margin-top: -20px;
 }
 
 .info-box {
-    width: 80vw; /* 80% of the viewport width */
-    max-width: 900px; /* Ensure it doesn't exceed 900px for large screens */
-    background: rgba(0, 0, 0, 0.6); /* Fully transparent background */
-    border: 2px solid white; /* White border */
-    border-radius: 15px; /* Curved edges */
+    width: 80vw;
+    max-width: 900px;
+    background: rgba(0, 0, 0, 0.6);
+    border: 2px solid white;
+    border-radius: 15px;
     padding: 20px;
-    margin-top: 20px; /* Space between subtitle and info box */
+    margin-top: 20px;
     display: flex;
     justify-content: space-around;
     text-align: center;
     font-size: 1.5vw;
-    color: white; /* White text color */
+    color: white;
 }
 
 .info-box i {
-    color: white; /* White icons */
+    color: white;
 }
 
 .info-box div {
@@ -77,7 +78,7 @@
 }
 
 .info-box div:not(:last-child) {
-    border-right: 2px solid rgba(255, 255, 255, 0.3); /* Light white separator line */
+    border-right: 2px solid rgba(255, 255, 255, 0.3);
 }
 
 @media (min-width: 768px) {

@@ -3,12 +3,12 @@
 }
 
 .main-content {
-    margin-left: 250px; /* Adjust based on the width of the sidebar */
+    margin-left: 250px;
     padding: 20px;
 }
 
 h1, h2 {
-    font-family: 'Forum', serif; /* Apply Forum font to headers */
+    font-family: 'Forum', serif;
     user-select: none;
 }
 
@@ -19,8 +19,8 @@ h1, h2 {
 
 .book-appointment-btn {
     margin-top: 20px;
-    background-color: black; /* Black background for the button */
-    border-color: black; /* Black border for the button */
+    background-color: black; 
+    border-color: black; 
     color: white;
 }
 
@@ -55,14 +55,13 @@ h1, h2 {
 
 body {
     background-color: #f2e6d9;
-    font-family: 'Forum', serif; /* Apply Forum font to body */
+    font-family: 'Forum', serif;
 }
 
-/* Override default hover styles for the primary button */
 .book-appointment-btn:hover {
-    color: #fff; /* Set the color to the desired value */
-    background-color: #000000; /* Set the background color to the desired value */
-    border-color: #ffffff; /* Set the border color to the desired value */
+    color: #fff;
+    background-color: #000000;
+    border-color: #ffffff;
 }
 
 h3{
@@ -83,10 +82,10 @@ h3{
 
 .add-appointment-btn,
 .book-appointment-btn {
-    display: block; /* Change display property to block */
-    width: 20%; /* Make buttons occupy full width */
+    display: block;
+    width: 20%;
 }
 
 .add-appointment-btn {
-    margin-bottom: 10px; /* Add margin at the bottom to create space */
+    margin-bottom: 10px;
 }

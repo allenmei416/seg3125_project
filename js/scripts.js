@@ -12,12 +12,11 @@ $(document).ready(function() {
                 serviceExpert: $(this).find('.serviceExpert').val(),
                 appointmentTime: $(this).find('.appointmentTime').val(),
                 appointmentDate: $(this).find('.appointmentDate').val(),
-                isRecurring: $(this).find('.isRecurring').val(), // Capture isRecurring value
-                recurringInterval: $(this).find('.recurringInterval').val(), // Capture recurringInterval value
+                isRecurring: $(this).find('.isRecurring').val(),
+                recurringInterval: $(this).find('.recurringInterval').val(), 
                 familyMembers: []
             };
 
-            // Retrieve family member details
             $(this).find('.family-members-form').each(function() {
                 let familyMember = {
                     name: $(this).find('.memberFullName').val(),
@@ -31,10 +30,6 @@ $(document).ready(function() {
 
             appointments.push(appointment);
         });
-
-        console.log(appointments);
-
-        // Display confirmation message
         showConfirmationMessage(appointments);
     });
 
@@ -54,10 +49,8 @@ $(document).ready(function() {
     });
 });
 function showConfirmationMessage(appointments) {
-    // Clear any previous confirmation messages
     $('#confirmationMessage').empty();
 
-    // For each appointment, create a confirmation section
     appointments.forEach(function(appointment, index) {
         let formattedDate = new Date(appointment.appointmentDate).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' });
 
@@ -71,7 +64,6 @@ function showConfirmationMessage(appointments) {
                 <p><strong>Date:</strong> ${formattedDate}</p>
         `;
 
-        // If it's a recurring appointment, include recurring information
         if (appointment.isRecurring === 'yes') {
             confirmationSection += `
                 <h3>Recurring Appointment:</h3>
@@ -83,7 +75,6 @@ function showConfirmationMessage(appointments) {
             </div>
         `;
 
-        // If there are family members, include their details in the confirmation
         if (appointment.familyMembers.length > 0) {
             confirmationSection += '<h3>Family Members:</h3>';
             appointment.familyMembers.forEach(function(member, idx) {
@@ -99,11 +90,9 @@ function showConfirmationMessage(appointments) {
             });
         }
 
-        // Add the confirmation section to the confirmation message
         $('#confirmationMessage').append(confirmationSection);
     });
 
-    // Hide the form and display the confirmation message
     $('#appointmentForm').hide();
     $('#appointment_header').hide();
     $('#confirmationMessage').show();

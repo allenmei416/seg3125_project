@@ -30,7 +30,7 @@
 
 .nav-link:hover {
     color: #007bff;
-    font-weight: bold; /* Bold font on hover */
+    font-weight: bold;
 }
 
 .underlined {
@@ -38,12 +38,12 @@
 }
 
 .main-content {
-    margin-left: 250px; /* Adjust based on the width of the sidebar */
+    margin-left: 250px;
 }
 
 h1 {
     color: #007bff;
-    font-family: 'Forum', serif; /* Apply Forum font to headers */
+    font-family: 'Forum', serif;
     user-select: none; 
 }
 
@@ -53,7 +53,7 @@ h1 {
 
 .social-icons a {
     color: white;
-    margin: 0 5px; /* Adjust spacing between icons */
+    margin: 0 5px;
 }
 
 .home-picture {
@@ -73,5 +73,5 @@ h1 {
 
 body {
     background-color: #f2e6d9;
-    font-family: 'Forum', serif; /* Apply Forum font to body */
+    font-family: 'Forum', serif; 
 }
