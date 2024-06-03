@@ -98,3 +98,6 @@ function showConfirmationMessage(appointments) {
     $('#confirmationMessage').show();
 }
 
+
+var today = new Date().toISOString().split('T')[0];
+document.querySelector('.appointmentDate').value = today;
