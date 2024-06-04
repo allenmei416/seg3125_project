@@ -13,7 +13,7 @@ $(document).ready(function() {
                 appointmentTime: $(this).find('.appointmentTime').val(),
                 appointmentDate: $(this).find('.appointmentDate').val(),
                 isRecurring: $(this).find('.isRecurring').val(),
-                recurringInterval: $(this).find('.recurringInterval').val(), 
+                recurringInterval: $(this).find('.recurringInterval').val(),
                 familyMembers: []
             };
 
@@ -35,7 +35,7 @@ $(document).ready(function() {
 
     $('.add-appointment-btn').click(function() {
         let newAppointmentBlock = $('.family-members-form:first').clone();
-        newAppointmentBlock.find('input, select').val('');
+        newAppointmentBlock.find('input').val('');
         $('#appointmentsContainer').append(newAppointmentBlock);
         $('#family-members-form').show();
     });
@@ -48,6 +48,7 @@ $(document).ready(function() {
         }
     });
 });
+
 function showConfirmationMessage(appointments) {
     $('#confirmationMessage').empty();
 
@@ -97,7 +98,6 @@ function showConfirmationMessage(appointments) {
     $('#appointment_header').hide();
     $('#confirmationMessage').show();
 }
-
 
 var today = new Date().toISOString().split('T')[0];
 document.querySelector('.appointmentDate').value = today;
